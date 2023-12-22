@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+  /* Style the header */
+header {
+    background-image: url("Imagens/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    text-align: center;
+    background-color:#d7d5d5;
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+
+img {
+    width: 15rem;
+    height: auto;
+    overflow: hidden;
+    border-radius: 60%;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 35px;
+}
+
+img {
+    float: left;
+}
+
+.gradient {
+    color: steelblue;
+    background-image: linear-gradient(to bottom, rgb(134, 196, 255), rgb(255, 255, 255), rgb(99, 155, 170));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+  /* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    padding: 30px;
+    background-color: #b6b4b4;
+}
+
+  /* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+}
+
+section p h2 ul{
+    background:#b41414;
+}
+
+  /* Clear floats after the columns */
+section::after {
+    background: #ccc;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #00000065;
+    text-decoration: none;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+
+.btn:hover {
+	background-color: #45a049;
+}
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+    width: 100%;
+    height: auto;
+    }
+}
+
+.rodape{
+    background-color: #8d6750;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+.rodape p{
+    margin-bottom: 5px;
+}
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 40px 10px 40px 10px;
+}
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+
+    padding-left: 150px;
+}
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+
+footer{
+    background-color:  #6f5442;
+    text-align: center;
+    color: white;
+}

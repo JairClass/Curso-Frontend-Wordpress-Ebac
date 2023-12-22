@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Slabo 27px';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Isto é importante para o layout de altura completa */
+    display: flex; /* Transforma o body em um flex container */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    background-image: url(./Imagens/interior.png);
+    height: 1000px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8d6750;
+}
+
+body {
+    min-height: 100vh; /* Altura mínima de 100% da viewport */
+}
+
+img {
+    width: 1600px;
+    height: 100%;
+    padding-bottom: 30px;   
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 35px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+        margin-top: 16px;
+}
+
+.whatsapp-link{
+        transition: all 0.5s;
+        cursor: pointer;
+}
+    
+.whatsapp-link:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #443125; 
+    padding: 1rem;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 25px;
+}
+
+.nav-links a:hover {
+    color: #2f221b; 
+}
+
+.rodape{
+    background-color: #8d6750;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+.rodape p{
+    margin-bottom: 5px;
+}
+
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 40px 10px 40px 10px;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+
+footer{
+    background-color:  #6f5442;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 0;
+    font-size: 15px;
+    height: auto;
+    width: 100%;
+    float: inline-end;
+}
+
+.abc p{
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+    .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+        width: calc(50% - 20px);
+        padding: 10px;
+    }
+    .rodape-div{
+        padding: 60px 0px 40px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links li {
+        padding: 5px;
+    }
+    
+    .center-images {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

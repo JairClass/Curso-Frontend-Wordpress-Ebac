@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style-formulario.css">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h2>Formulário</h2>
+</header>
+
+<section>
+
+    <nav>
+        <ul>
+            <li><a href="home.html" target="_blank">Home</a></li>
+			<li><a href="formulario.html" target="_blank">Formulário</a></li>
+			<li><a href="sobre.html" target="_blank">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <article>
+
+        <h1>Contato</h1>
+        <p>Preencha os campos abaixo:</p>
+
+        <form method="post">
+
+            <div>
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+            </div>
+
+            <div>
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" id="email" placeholder="Digite seu email">
+            </div>
+
+            <div>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+            </div>
+
+            <div>
+                <label>Qual linguagem você prefere?</label><br>
+                <input type="radio" name="linguagem-preferida" value="html"> HTML<br>
+                <input type="radio" name="linguagem-preferida" value="css"> CSS<br>
+                <input type="radio" name="linguagem-preferida" value="javascript"> JavaScript
+            </div>
+
+            <div>
+                <label>Quais linguagens você sabe?</label><br>
+                <input type="checkbox" name="linguagens[]" value="html"> HTML<br>
+                <input type="checkbox" name="linguagens[]" value="css"> CSS<br>
+                <input type="checkbox" name="linguagens[]" value="javascript"> JavaScript
+            </div>
+
+            <div>
+                <label>Qual a sua cor favorita?</label><br>
+                <select name="cor-favorita">
+                    <option value="Azul">Azul</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Vermelho" selected>Vermelho</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Qual a sua idade?</label><br>
+                <input type="number" name="idade" id="idade" min="18" max="100">
+            </div>
+
+            <div>
+                <label>Qual o seu gênero?</label><br>
+                <input type="radio" name="genero" value="masculino"> Masculino<br>
+                <input type="radio" name="genero" value="feminino"> Feminino<br>
+                <input type="radio" name="genero" value="outro"> Outro
+            </div>
+
+            <div>
+                <label>Qual a sua profissão?</label><br>
+                <input type="text" name="profissao" id="profissao" placeholder="Digite sua profissão">
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+
+
+        </form>
+
+    </article>
+
+
+</section>
+
+<a href="#" class="btn"></a>
+
+<footer>
+    <p>&copy; 2023 Desenvolvido por Jair Willian Class. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
