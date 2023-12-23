@@ -6,14 +6,6 @@ Este repositório é dedicado aos materiais e projetos do Curso de WordPress ofe
 
 O curso é minuciosamente estruturado em módulos específicos, cada um explorando diferentes facetas do desenvolvimento web e design, com ênfase no Front-end e WordPress.
 
-### Módulos
-- **Introdução à Programação**
-- **HTML 1 e 2:** Fundamentos e práticas avançadas em HTML.
-- **CSS 1 e 2:** Conceitos básicos e avançados em CSS.
-- **Design Concepts:** Princípios de design para web.
-- **Web Layouts 1 e 2:** Técnicas para criação de layouts eficientes.
-- **Git:** Uso profissional de Git e GitHub para controle de versão e colaboração.
-
 ## Tecnologias e Ferramentas Abordadas
 
 - **HTML/CSS:** Estruturação de conteúdo e estilização.
