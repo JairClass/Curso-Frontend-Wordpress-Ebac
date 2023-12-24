@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* Ajuste para rem */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .form-container {
+    background: #222;
+    color: #fff;
+}
+
+body.dark-mode .modo-escuro {
+    color: #fff;
+}
+
+body.dark-mode button {
+    color: #fff; 
+}
+
+body.dark-mode .reset-form {
+    background-color: #f44336; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-container {
+    background: #fff;
+    padding: 40px;
+    width: 70%; 
+    max-width: 800px; 
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.modo-escuro {
+    position: relative;
+    top: -20px;
+    left: 10px;
+    padding: auto;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.modo-escuro:hover {
+    color: #555;
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
+.titulo-form {
+    font-size: 2.5rem;
+    color: #2121be;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+input, button {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+button {
+    background-color: #2121be; /* Cor do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Removendo a borda */
+    cursor: pointer;
+    padding: 1.2rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4545c2; /* Cor do botão ao passar o mouse */
+}
+
+.mensagem {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.5s ease;
+}
+
+.mensagem.sucesso {
+    color: green;
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 3rem; 
+    font-weight: bold;
+    animation: mensagemSucesso 1s ease;
+}
+
+.mensagem.erro {
+    color: red;
+}
+
+.mensagem.ativa {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.form-container {
+    margin: auto; 
+}
+
+.submit-btn, .reset-form {
+    background-color: #2121be;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.reset-form {
+    background-color: #f44336; /* Cor do botão de reset */
+}
+
+.reset-form:hover {
+    background-color: #d32f2f; /* Cor do botão de reset ao passar o mouse */
+}
+
+
+@keyframes mensagemSucesso {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes backgroundAnimation {
+    0%, 100% { background-color: #f0f0f0; }
+    50% { background-color: #e0e0e0; }
+}
+
+/* Media Queries para Tablets */
+@media screen and (max-width: 1280px) {
+    .form-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .form-container {
+        width: 90%;
+    }
+}
+
+/* Media Queries para Mobile */
+@media screen and (max-width: 720px) {
+    .form-container {
+        width: 95%;
+    }
+
+    .titulo-form {
+        font-size: 2rem;
+    }
+
+    input, button {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Queries para Desktop */
+@media screen and (min-width: 1366px) {
+    .form-container {
+        max-width: 900px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .form-container {
+        max-width: 1000px;
+    }
+}
