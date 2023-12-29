@@ -30,8 +30,8 @@ Este projeto está sob a Licença MIT. Detalhes completos estão disponíveis no
 ## Contato e Instrutor
 
 - **Instrutor:** [Marcelo Cavalcante](https://www.linkedin.com/in/cavalcantemarcelo/) e [Ricardo Rubio](https://www.linkedin.com/in/ricardorubiopereira/)
-- **Email:** [j.willianclass02@gmail.com](mailto:j.willianclass02@gmail.com)
 - **LinkedIn:** [Jair Willian Class](https://www.linkedin.com/in/jairwillianclass/)
+- **Email:** [j.willianclass02@gmail.com](mailto:j.willianclass02@gmail.com)
 
 ---
 
