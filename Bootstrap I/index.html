@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Janleii - Loja de Copos e Garrafas Térmicas</title>
+
+        <!-- RESET -->
+        <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+</head>
+<body>
+    <body>
+        <div class="content-wrapper">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#" style="font-size: 2.0rem;">Janleii</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sobre">Sobre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#produtos">Produtos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contato">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <h2>Sobre Nossa Loja</h2>
+                        <p>A Janleii é especializada em copos e garrafas térmicas de alta qualidade, oferecendo uma ampla variedade de estilos e tamanhos. Nossa missão é combinar funcionalidade, estilo e sustentabilidade, garantindo que suas bebidas mantenham a temperatura ideal em qualquer lugar. Venha descobrir produtos inovadores e um atendimento personalizado que coloca você em primeiro lugar.</p>
+                        
+                        <a class="btn btn-lg btn-success" href="#produtos">Conheça Nossos Produtos</a>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <img src="./imagens/pessoa.jpg" alt="Sobre Nós" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="py-5">
+            <div class="container">
+                <h2 class="text-center">Nossos Produtos</h2>
+                <div class="row">
+                    <!-- Produto 1: Copo Térmico -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./imagens/copos.jpg" alt="Copo Térmico" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 2rem;">Copo Térmico</h5> <!-- Aumento do tamanho do título -->
+                                <p class="card-text" style="font-size: 1.2rem;">Mantenha sua bebida na temperatura ideal por mais tempo.</p> <!-- Aumento do tamanho do texto -->
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCopo">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2: Garrafa Térmica -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="./imagens/garrafas.jpg" alt="Garrafa Térmica" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 2rem;">Garrafa Térmica</h5>
+                                <p class="card-text" style="font-size: 1.2rem;">Perfeita para aventuras ao ar livre, mantém sua bebida quente ou fria.</p>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGarrafa">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Contato</h2>
+                        <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação ou entre em contato pelo WhatsApp.</p>
+                        <!-- Botão do WhatsApp -->
+                        <a href="https://wa.me/5541999205844" class="btn btn-success btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Fale Conosco pelo WhatsApp
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Seu Nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Seu Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="5" placeholder="Sua Mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-lg btn-success">Enviar Mensagem</button>
+                        </form>
+
+                        <div id="mensagemSucesso" style="display: none; color: green;">
+                            Sua mensagem foi enviada com sucesso!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+<!-- Modal para Copo Térmico -->
+<div class="modal fade" id="modalCopo">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Copo Térmico</h5>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Escolha o tamanho e veja os preços:</p>
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Tamanho</th>
+                            <th>Cor</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>P</td>
+                            <td>Vermelho, Azul, Verde</td>
+                            <td>R$ 100,00</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>Vermelho, Azul, Verde</td>
+                            <td>R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>G</td>
+                            <td>Vermelho, Azul, Verde</td>
+                            <td>R$ 200,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Garrafa Térmica -->
+<div class="modal fade" id="modalGarrafa">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Garrafa Térmica</h5>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Disponível em diversas cores e tamanhos:</p>
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>Tamanho</th>
+                            <th>Cor</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>500ml</td>
+                            <td>Prata, Preto, Dourado</td>
+                            <td>R$ 120,00</td>
+                        </tr>
+                        <tr>
+                            <td>750ml</td>
+                            <td>Prata, Preto, Dourado</td>
+                            <td>R$ 180,00</td>
+                        </tr>
+                        <tr>
+                            <td>1L</td>
+                            <td>Prata, Preto, Dourado</td>
+                            <td>R$ 250,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-white pt-4 pb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Endereço</h5>
+                <address>
+                    Rua Machado Berges, 81<br>
+                    Curitiba, PR, 81170320
+                </address>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h5>Contato</h5>
+                <ul class="list-unstyled">
+                    <li>(41) 99920-5844</li>
+                    <li>janleii@gmail.com</li>
+                    <li>Horário: 9h - 18h</li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 mb-3">
+                <h5>Siga-nos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="./manutencao.html" target="_blank" class="text-white">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/jairzera7/" target="_blank" class="text-white">Instagram</a></li>
+                    <li><a href="./manutencao.html" class="text-white" target="_blank">Twitter</a></li>
+                </ul>
+
+                <div class="col-md-2 mb-3">
+                <h5>Localização</h5>
+                    <!-- Iframe do Google Maps -->
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.7395453012205!2d-49.3317093!3d-25.5137315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfd2c3083b17f%3A0x69544290978cab2b!2sR.%20Raul%20Machado%20Berges%2C%2081%20-%20Cidade%20Industrial%20de%20Curitiba%2C%20Curitiba%20-%20PR%2C%2081170-320!5e0!3m2!1spt-BR!2sbr!4v1703484616712!5m2!1spt-BR!2sbr"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="bg-secondary text-white text-center py-3">
+        <p class="mb-0">&copy; 2023 Janleii - Loja de Copos e Garrafas Térmicas . Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

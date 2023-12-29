@@ -1,0 +1,320 @@
+/* Estilos Gerais */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+#sobre img{
+    width: 100%;
+    height: 100%;
+}
+
+#sobre p{
+font-size: 1.4rem;
+}
+
+#sobre h2{
+    font-size: 2.5rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color:#6C757D; /* Cor de fundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+
+}
+
+.col h1{
+    color: white;
+    text-align: left;
+}
+
+/* Estilos da Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+/* Sobre Nós com Background Diferenciado */
+#sobre {
+    background-color: #e9ecef;
+    padding: 40px 0;
+}
+
+.row a{
+    margin-bottom: 20px;
+}
+
+/* Estilos para a seção de produtos */
+#produtos {
+    padding: 40px 0; /* Espaçamento acima e abaixo da seção */
+    text-align: center; /* Centraliza o título e o conteúdo */
+    background-color:  #222;
+}
+
+#produtos h2{
+    color: white;
+    text-shadow: 0 0 5px #407170, 0 0 10px #289ed5;
+}
+
+#produtos .row {
+    display: flex;
+    justify-content: space-around; /* Distribui os cards uniformemente com espaço ao redor */
+    flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas */
+}
+
+#produtos .card {
+    margin-bottom: 20px; /* Espaçamento na parte inferior de cada card */
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    transition: transform 0.3s ease;
+    width: 100%; /* Largura fixa para os cards */
+    max-width: 100%;
+    height: 100%; /* Altura fixa para os cards */
+}
+
+#produtos .card:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+#produtos .card-img-top {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço sem distorcer */
+}
+
+#produtos .card-body {
+    padding: 15px; /* Espaçamento interno no card */
+}
+
+#produtos .card-title {
+    font-size: 1.2rem; /* Tamanho uniforme para o título do card */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+#produtos .card-text {
+    margin-bottom: 15px; /* Espaçamento abaixo do texto */
+}
+
+#produtos .btn {
+    font-size: 1rem; /* Tamanho uniforme para o botão */
+    width: 100%; /* O botão ocupa toda a largura do card */
+}
+
+/* Ajustes para a imagem do card */
+#produtos .card-img-top {
+    height: 100%; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço sem distorcer */
+}
+
+/* Contato com Background Diferenciado */
+#contato {
+    background-color: #d9d9d9; /* Escolha uma cor */
+    padding: 40px 0;
+    margin-bottom: 0px;
+}
+
+.mensagem-sucesso {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+/* Estilos para o Modo Escuro */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .card,
+body.dark-mode .modal-content {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Footer fixo na parte inferior */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer */
+footer.bg-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo para o iframe do Google Maps */
+footer.bg-dark iframe {
+    width: 250px;
+    height: 200px; /* Ajuste a altura conforme necessário */
+    border: none;
+}
+
+/* Efeitos e Animações */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsividade */
+
+/* Responsividade para Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .card {
+        width: 48%; 
+    }
+
+    header .col, .nav {
+        text-align: center;
+    }
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    .modo-escuro, .to-top {
+        font-size: 1.2rem;
+    }
+
+    header .col, .nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        display: block;
+    }
+}
+
+/* Responsividade para Desktops de Alta Resolução */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px; 
+    }
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    header .col {
+        text-align: center;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .modo-escuro, .to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+}
+
+/* Responsividade para Tablets e Desktops */
+@media (min-width: 768px) {
+    #produtos .col-md-4 {
+        flex: 0 0 33.333333%; /* Cada card ocupa 1/3 da largura da tela */
+        max-width: 33.333333%;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #007bff; /* Cor de fundo para o menu colapsado */
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        justify-content: flex-end; /* Alinha os itens à direita em telas pequenas */
+    }
+}
