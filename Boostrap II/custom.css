@@ -1,0 +1,194 @@
+* Estilos Gerais */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+a:hover, button:hover {
+    transform: scale(1.05);
+}
+
+/* Sombra e Efeito Hover nos Inputs */
+.form-control {
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Botão Principal com Efeito Hover */
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Header */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.navbar {
+    background-color: #343a40 ; /* Cor de fundo escura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.navbar-brand {
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Opcional: Tornar o texto mais grosso */
+    align-items: center; /* Alinhamento vertical */
+    display: flex; /* Para alinhar ícone e texto */
+}
+
+.navbar-brand img {
+    height: 30px; /* Altura do ícone */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Cor dos links */
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #ddd; /* Cor dos links ao passar o mouse e ativo */
+}
+
+/* Estilização do Formulário de Cadastro para corresponder à Navegação */
+.form-control, .btn-success {
+    font-size: 1rem; /* Tamanho padrão de fonte semelhante ao da navegação */
+}
+
+/* Botão do Formulário */
+.btn-success {
+    font-weight: 500; /* Peso da fonte semelhante ao da navegação */
+    padding: .5rem 1rem; /* Ajuste o padding conforme necessário */
+}
+
+/* Estilização do Formulário */
+#cadastro {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+#cadastro h2 {
+    color: #333;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#cadastro p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #cadastro {
+        margin-top: 15px;
+        padding: 20px;
+    }
+
+    #cadastro h2 {
+        font-size: 2.2rem;
+    }
+}
+
+
+/* Formulário de Cadastro */
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-control {
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Rodapé */
+.footer-main {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-bottom {
+    background-color: #58626c;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 8px 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .form {
+        padding: 0 15px;
+    }
+}
+
+/* Outros ajustes de responsividade conforme necessário */
+/* Responsividade */
+@media (max-width: 768px) {
+    #cadastro {
+        margin-top: 15px;
+        padding: 20px;
+    }
+
+    #cadastro h2 {
+        font-size: 2.2rem;
+    }
+}

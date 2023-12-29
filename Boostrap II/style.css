@@ -1,0 +1,474 @@
+* Estilos Gerais */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+a:hover, button:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos do Carousel */
+#homeCarousel {
+    position: relative;
+    width: 100%; /* Largura total */
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%; /* Largura total do carousel */
+    height: auto; /* Altura automática para manter a proporção */
+    min-height: 300px; /* Altura mínima para garantir cobertura visual */
+    object-fit: contain; /* Garante que a imagem inteira seja visível */
+}
+
+/* Controles do Carousel */
+.carousel-control-prev, .carousel-control-next {
+    width: 45px;
+    height: 45px;
+    margin: auto 0;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para as setas */
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 20px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#sobre img{
+    width: 100%;
+    height: 100%; /* Mantém a proporção da imagem */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar a imagem */
+    border-radius: 10px; /* Cantos arredondados para um visual moderno */
+    transition: all 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+}
+
+#sobre p{
+font-size: 1.4rem;
+}
+
+#sobre h2{
+    font-size: 2.5rem;
+}
+
+.col h1{
+    color: white;
+    text-align: left;
+}
+
+/* Header */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.navbar {
+    background-color: #343a40; /* Cor de fundo escura */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.navbar-brand {
+    color: white; /* Cor do texto */
+    font-weight: bold; /* Opcional: Tornar o texto mais grosso */
+    align-items: center; /* Alinhamento vertical */
+    display: flex; /* Para alinhar ícone e texto */
+}
+
+.navbar-brand img {
+    height: 30px; /* Altura do ícone */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Cor dos links */
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #ddd; /* Cor dos links ao passar o mouse e ativo */
+}
+
+.form-control:focus {
+    border-color: #000000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.iframe-maps {
+    width: 100%; /* Largura total do contêiner */
+    height: 200px; /* Altura fixa */
+    border: 0; /* Sem borda */
+}
+
+/* Sobre Nós com Background Diferenciado */
+#sobre {
+    background-color: #D9D9D9;
+    padding: 40px 0;
+}
+
+.row a{
+    margin-bottom: 20px;
+}
+
+/* Estilos para a seção de produtos */
+#produtos {
+    padding: 40px 0; /* Espaçamento acima e abaixo da seção */
+    text-align: center; /* Centraliza o título e o conteúdo */
+    background-color:  #343A40;
+}
+
+#produtos h2{
+    color: white;
+    text-shadow: 0 0 5px #407170, 0 0 10px #289ed5;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+#produtos .row {
+    display: flex;
+    justify-content: space-around; /* Distribui os cards uniformemente com espaço ao redor */
+    flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas */
+}
+
+#produtos .card {
+    margin-bottom: 20px; /* Espaçamento na parte inferior de cada card */
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    transition: transform 0.3s ease;
+    width: 100%; /* Largura fixa para os cards */
+    max-width: 100%;
+    height: 100%; /* Altura fixa para os cards */
+}
+
+#produtos .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    background-color:  rgb(206, 184, 60); /* Mudar conforme a paleta de cores */
+}
+
+#produtos .card-img-top {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço sem distorcer */
+}
+
+#produtos .card-body {
+    padding: 15px; /* Espaçamento interno no card */
+}
+
+#produtos .card-title {
+    font-size: 1.2rem; /* Tamanho uniforme para o título do card */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    font-weight: bold;
+}
+
+#produtos .card-text {
+    margin-bottom: 15px; /* Espaçamento abaixo do texto */
+}
+
+#produtos .btn {
+    font-size: 1rem; /* Tamanho uniforme para o botão */
+    width: 100%; /* O botão ocupa toda a largura do card */
+}
+
+/* Ajustes para a imagem do card */
+#produtos .card-img-top {
+    height: 100%; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço sem distorcer */
+}
+
+/* Contato com Background Diferenciado */
+#contato {
+    background-color: #d9d9d9; /* Escolha uma cor */
+    padding: 40px 0;
+    margin-bottom: 0px;
+}
+
+.mensagem-sucesso {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+.btn:hover, .card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #00000065;
+    text-decoration: none;
+    z-index: 1050; /* Garante que o botão fique acima de outros elementos */
+}
+
+.btn1::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: margin-top 250ms;
+}
+
+.btn1:hover::after {
+    margin-top:-8px;
+}
+
+.btn1:hover {
+    background-color: #157347;
+}
+
+/* Footer para endereço, contato, siga-nos, etc. */
+.footer-main {
+    background-color: #343a40; /* Escolha a cor de fundo desejada */
+    color: white;
+    padding: 20px 0;
+}
+
+/* Footer para os direitos autorais */
+.footer-bottom {
+    background-color: #58626c; /* Escolha a cor de fundo desejada */
+    color: white;
+    padding: 10px 0;
+}
+
+/* Efeitos e Animações */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-fadeInUp {
+    animation: fadeInUp 1s ease-out;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Responsividade */
+
+/* Responsividade para Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .card {
+        width: 48%; 
+    }
+
+    header .col, .nav {
+        text-align: center;
+    }
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    header .col, .nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        display: block;
+    }
+}
+
+/* Responsividade para Desktops de Alta Resolução */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px; 
+    }
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+
+    header .col {
+        text-align: center;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .modo-escuro, .to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+}
+
+/* Responsividade para Tablets e Desktops */
+@media (min-width: 768px) {
+    #produtos .col-md-4 {
+        flex: 0 0 33.333333%; /* Cada card ocupa 1/3 da largura da tela */
+        max-width: 33.333333%;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        padding: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        justify-content: flex-end; /* Alinha os itens à direita em telas pequenas */
+    }
+}
+
+/* Responsividade para o Carousel */
+@media (max-width: 768px) {
+    .carousel-control-prev, .carousel-control-next {
+        width: 35px;
+        height: 35px;
+    }
+
+    .carousel-control-prev-icon:after, .carousel-control-next-icon:after {
+        width: 15px;
+        height: 15px;
+    }
+
+    .carousel-item img {
+        object-fit: cover; /* Ajusta a imagem para cobrir o espaço disponível */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        min-height: 200px; /* Altura mínima menor para dispositivos móveis */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item img {
+        min-height: 150px; /* Altura mínima ainda menor para telas pequenas */
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .iframe-maps {
+        height: 150px; /* Altura menor para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .iframe-maps {
+        height: 120px; /* Altura ainda menor para telas muito pequenas */
+    }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./custom.css">
+    <title>Janleii - Cadastro</title>
+    <link rel="icon" type="image/jng" href="./imagens/icon.jpg">
+
+        <!-- RESET -->
+        <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg"></nav> <!-- "footer superior" -->
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html" style="font-size: 2.0rem;">Janleii</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" style="font-size: 1.5rem;" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#produtos">Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#contato">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cadastro.html">Cadastro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+<!-- Conteúdo Principal da Página de Cadastro -->
+<section id="cadastro" class="py-5">
+    <div class="container">
+        <h2>Cadastro</h2>
+        <p>Faça seu cadastro para receber nossos produtos em sua casa.</p>
+        <form class="form" id="formCadastro">
+            <div class="row">
+                <div class="col-md-6">
+                    <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="email" name="email" placeholder="Digite seu email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" class="form-control" name="endereco" placeholder="Endereço completo" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="cidade" placeholder="Cidade" required>
+                </div>
+                <div class="col-md-4">
+                    <select name="estado" id="estado" class="form-control" required>
+                        <option value="">Estado</option>
+                        <option value="ac">AC</option>
+                        <option value="al">AL</option>
+                        <option value="ap">AP</option>
+                        <option value="am">AM</option>
+                        <option value="ba">BA</option>
+                        <option value="ce">CE</option>
+                        <option value="df">DF</option>
+                        <option value="es">ES</option>
+                        <option value="go">GO</option>
+                        <option value="ma">MA</option>
+                        <option value="mt">MT</option>
+                        <option value="ms">MS</option>
+                        <option value="mg">MG</option>
+                        <option value="pa">PA</option>
+                        <option value="pb">PB</option>
+                        <option value="pr">PR</option>
+                        <option value="pe">PE</option>
+                        <option value="pi">PI</option>
+                        <option value="rj">RJ</option>
+                        <option value="rn">RN</option>
+                        <option value="rs">RS</option>
+                        <option value="ro">RO</option>
+                        <option value="rr">RR</option>
+                        <option value="sc">SC</option>
+                        <option value="sp">SP</option>
+                        <option value="se">SE</option>
+                        <option value="to">TO</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="cep" placeholder="CEP" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="bairro" placeholder="Bairro" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="complemento" placeholder="Complemento">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="tel" class="form-control" name="celular" placeholder="Celular" pattern="[0-9]*" inputmode="numeric" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="tel" class="form-control" name="telefone" placeholder="Telefone" pattern="[0-9]*" inputmode="numeric" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <textarea class="form-control" name="informacoes" id="info" rows="5" placeholder="Informações adicionais"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="promocionais" id="promocionais">
+                        <label class="form-check-label" for="promocionais">Aceito receber mensagens promocionais</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-success">Realizar cadastro</button>
+        </form>
+    </div>
+</section>
+
+    <footer class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Endereço</h5>
+                    <address>
+                        Rua Machado Berges, 81<br>
+                        Curitiba, PR, 81170320
+                    </address>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li>(41) 99920-5844</li>
+                        <li>janleii@gmail.com</li>
+                        <li>Horário: 9h - 18h</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Siga-nos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./manutencao.html" class="text-white">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/janleii/" class="text-white">Instagram</a></li>
+                        <li><a href="./manutencao.html" class="text-white">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer-bottom text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Janleii - Loja de Copos e Garrafas Térmicas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./script2.js"></script>
+</body>
+</html>
